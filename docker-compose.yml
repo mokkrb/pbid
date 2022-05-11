@@ -1,0 +1,35 @@
+version: '3.3'
+services:
+  mongo:
+    image: 'mongo:latest'
+    ports:
+      - '27017:27017'
+    volumes:
+      - 'mongo:/data/db'
+  ui:
+    ports:
+      - '3000:3000'
+    command: npm run start
+    build:
+      dockerfile: Dockerfile
+      context: ./ui
+    volumes:
+      - ./ui/src:/app/src
+      - ./ui/package.json:/app/package.json
+  api:
+    ports:
+      - '4000:4000'
+    command: npm run start:dev
+    build:
+      dockerfile: Dockerfile
+      context: ./api
+    volumes:
+      - ./api/src:/app/src
+      - ./api/package.json:/app/package.json
+    environment:
+      - ENV=local
+      - MONGO_URL=mongodb://mongo
+      - MONGO_USER=
+      - MONGO_PASS=
+volumes:
+  mongo:

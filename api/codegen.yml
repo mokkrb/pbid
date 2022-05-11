@@ -1,0 +1,13 @@
+schema: './src/typedefs/*.gql.ts'
+generates:
+  src/types/generated-gql.ts:
+    hooks:
+      afterOneFileWrite:
+        - prettier --write
+    plugins:
+      - 'typescript'
+      - 'typescript-resolvers'
+    config:
+      useIndexSignature: true
+      contextType: ../typeDefs/context#IContext
+      federation: true
