@@ -1,0 +1,52 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`MinifiedUrls should render 1`] = `
+<div
+  data-testid="minifiedUrls"
+>
+  <ul>
+    <li>
+      <div
+        class="urlItem"
+      >
+        <span
+          class="originalUrl"
+        >
+          https://www.foo.bar
+          :
+        </span>
+         
+        <a
+          class="minifiedUrl"
+          href="https://pbid.io/12345678"
+          rel="noreferrer"
+          target="_blank"
+        >
+          https://pbid.io/12345678
+        </a>
+      </div>
+    </li>
+    <li>
+      <div
+        class="urlItem"
+      >
+        <span
+          class="originalUrl"
+        >
+          https://www.bar.baz
+          :
+        </span>
+         
+        <a
+          class="minifiedUrl"
+          href="https://pbid.io/87654321"
+          rel="noreferrer"
+          target="_blank"
+        >
+          https://pbid.io/87654321
+        </a>
+      </div>
+    </li>
+  </ul>
+</div>
+`;

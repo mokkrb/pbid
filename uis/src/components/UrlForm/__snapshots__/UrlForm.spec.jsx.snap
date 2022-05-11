@@ -1,0 +1,23 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`UrlForm renders the UrlFormComponent 1`] = `
+<div
+  data-testid="urlForm"
+>
+  <form>
+    <h2>
+      Minify your URL!
+    </h2>
+    <input
+      data-testid="urlFormInput"
+      type="text"
+      value=""
+    />
+    <button
+      type="submit"
+    >
+      Shorten Me!
+    </button>
+  </form>
+</div>
+`;

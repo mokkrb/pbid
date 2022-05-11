@@ -1,0 +1,10 @@
+.urlItem {
+  padding: 10px;
+}
+
+.originalUrl {
+  font-weight: bold;
+}
+a.minifiedUrl {
+  color: rgb(214, 19, 182);
+}

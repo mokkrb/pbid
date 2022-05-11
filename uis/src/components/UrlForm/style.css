@@ -1,0 +1,22 @@
+h2 {
+  text-align: center;
+}
+input {
+  line-height: 20px;
+  width: 90%;
+  border-radius: 4px;
+  padding: 12px;
+  border: none;
+}
+button {
+  display: block;
+  width: auto;
+  margin: 20px auto;
+  background-color: grey;
+  border-radius: 4px;
+  padding: 12px 32px;
+  font-size: 1rem;
+  color: #040d26;
+  background: #00c3b9;
+  border: none;
+}
